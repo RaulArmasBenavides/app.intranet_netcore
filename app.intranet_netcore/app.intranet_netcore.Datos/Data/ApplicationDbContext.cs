@@ -1,5 +1,4 @@
 ﻿using app.intranet_netcore.Models;
-using app.intranet_netcore.Models.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

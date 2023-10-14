@@ -1,4 +1,4 @@
-﻿using app.intranet_netcore.Datos.Data.Repository;
+﻿using app.intranet_netcore.Datos.Data.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
