@@ -17,10 +17,11 @@ namespace app.intranet_netcore.Datos.Data.Repository.IRepository
         );
 
         void Add(T entity);
-
         void Remove(int id);
-
         void Remove(T entity);
+        T Find(T o);
+        T FindById(int o);
+        List<T> ReadAll(int skip = 0, int limit = 30);
 
 
     }

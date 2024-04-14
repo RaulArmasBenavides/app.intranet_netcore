@@ -14,12 +14,10 @@ namespace app.intranet_netcore.Datos.Data.Repository
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
-            //Categoria = new CategoriaRepository(_db);
-            //Articulo = new ArticuloRepository(_db);
-            //Slider = new SliderRepository(_db);
+            Alumnos = new AlumnoRepository(_db);
             Usuario = new UsuarioRepository(_db);
         }
-
+        public IAlumnoRepository Alumnos { get; private set; }
         public IUsuarioRepository Usuario { get; private set; }
         public void Dispose()
         {

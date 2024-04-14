@@ -25,6 +25,16 @@ namespace app.intranet_netcore.Datos.Data
             _dbset.Add(entity);
         }
 
+        public T Find(T o)
+        {
+            throw new NotImplementedException();
+        }
+
+        public T FindById(int o)
+        {
+            throw new NotImplementedException();
+        }
+
         public T Get(int id)
         {
             return _dbset.Find(id);
@@ -55,6 +65,11 @@ namespace app.intranet_netcore.Datos.Data
             }
 
             return query.ToList();
+        }
+
+        public List<T> ReadAll(int skip = 0, int limit = 30)
+        {
+            throw new NotImplementedException();
         }
 
         public void Remove(int id)

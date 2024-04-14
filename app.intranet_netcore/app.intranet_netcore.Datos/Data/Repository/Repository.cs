@@ -26,6 +26,16 @@ namespace app.intranet_netcore.Datos.Data.Repository
             dbSet.Add(entity);
         }
 
+        public T Find(T o)
+        {
+            throw new NotImplementedException();
+        }
+
+        public T FindById(int o)
+        {
+            throw new NotImplementedException();
+        }
+
         public T Get(int id)
         {
             return dbSet.Find(id);
@@ -76,6 +86,11 @@ namespace app.intranet_netcore.Datos.Data.Repository
             }
 
             return query.FirstOrDefault();
+        }
+
+        public List<T> ReadAll(int skip = 0, int limit = 30)
+        {
+            throw new NotImplementedException();
         }
 
         public void Remove(int id)
