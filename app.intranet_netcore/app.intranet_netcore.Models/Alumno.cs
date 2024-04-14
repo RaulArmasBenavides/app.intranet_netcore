@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
 
 namespace app.intranet_netcore.Models
 {
+    [Table("alumno", Schema = "intranet")]
     public class Alumno
     {
         public int IdAlumno { get; set; }

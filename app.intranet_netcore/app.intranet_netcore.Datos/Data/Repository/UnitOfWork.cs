@@ -21,12 +21,12 @@ namespace app.intranet_netcore.Datos.Data.Repository
         public IUsuarioRepository Usuario { get; private set; }
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _db.Dispose();
         }
 
         public void Save()
         {
-            throw new NotImplementedException();
+            _db.SaveChanges();
         }
     }
 }
